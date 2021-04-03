@@ -105,8 +105,10 @@ yarn install  or  npm install
 # 开发/打包速度对比
 
 - 开发环境
+
   ![vue/cli-dev](https://upload-images.jianshu.io/upload_images/4985324-c3298579a3c6be10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
   ![vite/dev](https://upload-images.jianshu.io/upload_images/4985324-07e729b4d1d487f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 - 打包环境
+
   ![vue/cli-build](https://upload-images.jianshu.io/upload_images/4985324-5efc338fbbfbc0cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
   ![vite/build](https://upload-images.jianshu.io/upload_images/4985324-98901c6db13a3b0d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
