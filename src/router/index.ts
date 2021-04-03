@@ -2,7 +2,7 @@
  * @Author       : ADI
  * @Date         : 2021-04-03 12:49:20
  * @LastEditors  : ADI
- * @LastEditTime : 2021-04-03 14:44:37
+ * @LastEditTime : 2021-04-03 14:56:58
  */
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
@@ -30,7 +30,7 @@ const routes: Array<RouteConfig> = [
 
 const router = new VueRouter({
   mode: "history",
-  base: import.meta.env.BASE_URL,
+  // base: import.meta.env.BASE_URL,
   routes,
 });
 
