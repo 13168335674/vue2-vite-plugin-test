@@ -1,19 +1,8 @@
 {
   "tabWidth": 2,
+  "semi": true,
   "singleQuote": false,
   "trailingComma": "all",
-  "printWidth": 80,
-  "proseWrap": "never",
-  "arrowParens": "avoid",
   "endOfLine": "lf",
-  "semi": true,
-  "bracketSpacing": true,
-  "overrides": [
-    {
-      "files": ".prettierrc",
-      "options": {
-        "parser": "json"
-      }
-    }
-  ]
+  "bracketSpacing": true
 }

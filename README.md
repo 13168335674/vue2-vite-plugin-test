@@ -85,3 +85,17 @@ yarn install  or  npm install
 - use
 
   `import Home from "@/views/Home.vue";`
+
+5. 配置 scss 变量注入
+
+- 配置 vite.config.js
+
+  ```
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import '@/styles/variables.scss';`,
+      },
+    },
+  },
+  ```
