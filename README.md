@@ -1,24 +1,50 @@
 # vue2-vite-plugin
 
 ## Project setup
+
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+## CHANGES
+
+1. 引入 Vite `yarn add vite vite-plugin-vue2`
+2. 修改 package.json
+
+```json
+"scripts": {
+  "serve-vite": "vite",
+}
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+3. 添加 vite html template
+
+- 引入 vite-plugin-html `yarn add vite-plugin-html`
+- 配置 `vite.config.js`
+- 复制 /public/index.html => /index.html
+- 注入 script
+
+```html
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<% if (env.TOOL_NAME === 'vite') { %>
+<script type="module" src="/src/main.ts"></script>
+<% } %>
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+4. 配置 alias
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 配置 vite.config.js
+
+```javascript
+export default defineConfig({
+  resolve: {
+    alias: [
+      {
+        find: "@",
+        replacement: resolvePath("src"),
+      },
+    ],
+  },
+});
+```
