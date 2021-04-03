@@ -2,7 +2,7 @@
  * @Author       : ADI
  * @Date         : 2021-04-03 13:03:49
  * @LastEditors  : ADI
- * @LastEditTime : 2021-04-03 14:43:08
+ * @LastEditTime : 2021-04-03 15:12:20
  */
 import { createVuePlugin } from "vite-plugin-vue2";
 import { defineConfig } from "vite";
@@ -27,4 +27,11 @@ export default defineConfig({
       injectData: genHtmlOptions("vite"),
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import '@/styles/variables.scss';`,
+      },
+    },
+  },
 });
